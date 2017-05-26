@@ -1,0 +1,210 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>周超个人主页</title>
+<link rel="stylesheet" href="css/reset.css" type="text/css">
+<link rel="stylesheet" href="css/index.css" type="text/css">
+<link rel="stylesheet" href="css/baguetteBox.css" type="text/css">
+<link rel="Shortcut Icon" href="img/ico.png" >
+<script src="js/jquery-1.11.1.min.js" type="text/javascript"></script>
+<script src="js/banner.js" type="text/javascript"></script>
+</head>
+<body>
+<header class="clearfix">
+        <nav class="w1200 clearfix">
+        <a href="./index.html"><h1>zcao.net</h1></a>
+            <ul class="nav clearfix">
+                <li class="index"><a href="javascript:;"  class="select">首页</a></li>
+                <li class="work"><a href="javascript:;">作品</a></li>
+                <li class="skill_nav"><a href="javascript:;">技能</a></li>
+                <li class="about"><a href="javascript:;">关于</a></li>
+                <li class="blog"><a href="http://www.zoucao.net" target="_blank">博客</a></li>
+                <li class="msg"><a href="https://github.com/netstao" target="_blank">Git</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="banner clearfix">
+        <section class="banner_index w1200">
+        <ul class="banner_wrap clearfix">
+                <li class="hero"><a href="javascript:;"><img src="img/banner1.jpg" width="1200" height="400" alt=""/></a></li>
+                <li class="hero"><a href="javascript:;"><img src="img/banner2.jpg" width="1200" height="400" alt=""/></a></li>
+                <li class="hero"><a href="javascript:;"><img src="img/banner3.jpg" width="1200" height="400" alt=""/></a></li>
+                <li class="hero"><a href="javascript:;"><img src="img/banner4.jpg" width="1200" height="400" alt=""/></a></li>
+            </ul>
+            <div class="helper">
+            <a href="javascript:;" class="prev"><div class="mask-left"></div></a>
+            <a href="javascript:;" class="next"><div class="mask-right"></div></a>
+            </div>
+            <!--<ol class="foucs_icon">
+                <li class="select"></li>
+                <li></li>
+                <li></li>
+            </ol>-->
+        </section>
+    </section>
+    <script type="text/javascript">
+         $.foucs({ direction: 'left' });
+                $('.banner_index').hover(function(){ 
+                    $('.prev,.next').children('div').toggle();
+            });
+    </script>
+    <div class="works clearfix"> 
+        <ul class="w_nav clearfix" id="w_nav">
+                <li class="select">网页平面</li>
+                <li >UI</li>
+                <li>APP原型</li>
+                <li>PHP</li>
+        </ul>
+        <div class="w_con w1200 clearfix">
+           
+            <ul class="w_list clearfix show">
+                <li><a href="javascript:;"><img src="img/work2-1.jpg" width="378" height="260" alt=""/></a><span>靓丽一夏立体字</span></li>
+                <li><a href="javascript:;"><img src="img/work2-2.jpg" width="378" height="260" alt=""/></a><span>天猫首页练习作品</span></li>
+                <li><a href="javascript:;"><img src="img/work2-3.jpg" width="378" height="260" alt="" url="1"/></a><span>西京大程</span></li>
+                <li><a href="javascript:;"><img src="img/work2-4.jpg" width="378" height="260" alt=""/></a><span>浩洲装饰</span></li>
+                <li><a href="javascript:;"><img src="img/work2-5.jpg" width="378" height="260" alt=""/></a><span>九邦创投</span></li>
+                <li><a href="javascript:;"><img src="img/work2-6.jpg" width="378" height="260" alt=""/></a><span>点亮青春Banner</span></li>
+                <li><a href="javascript:;"><img src="img/work2-7.jpg" width="378" height="260" alt=""/></a><span>换季促销Banner</span></li>
+                <li><a href="javascript:;"><img src="img/work2-8.jpg" width="378" height="260" alt=""/></a><span>品质男装</span></li>
+                <li><a href="javascript:;"><img src="img/work2-9.jpg" width="378" height="260" alt=""/></a><span>SALE促销</span></li>
+            </ul>
+             <ul class="w_list clearfix">
+                <li><a href="javascript:;"><img src="img/work1-1.jpg" data-url="img/work1-1.jpg"  width="378" height="260" alt=""/></a><span>水晶质感按钮</span></li>
+                <li><a href="javascript:;"><img src="img/work1-2.jpg" data-url="img/work1-2.jpg" width="378" height="260" alt=""/></a><span>音乐质感</span></li>
+                <li><a href="javascript:;"><img src="img/work1-3.jpg" data-url="img/work1-3.jpg" width="378" height="260" alt=""/></a><span>相机</span></li>
+                <li><a href="javascript:;"><img src="img/work1-4.jpg" data-url="img/work1-4.jpg" width="378" height="260" alt=""/></a><span>播放器</span></li>
+                <li><a href="javascript:;"><img src="img/work1-5.jpg" data-url="img/work1-5.jpg" width="378" height="260" alt=""/></a><span>音乐图标</span></li>
+                <li><a href="javascript:;"><img src="img/work1-6.jpg" data-url="img/work1-6.jpg" width="378" height="260" alt=""/></a><span>游戏界面</span></li>
+                <li><a href="javascript:;"><img src="img/work1-7.jpg" data-url="img/work1-7.jpg" width="378" height="260" alt=""/></a><span>手机主题</span></li>
+                <li><a href="javascript:;"><img src="img/work1-8.jpg" data-url="img/work1-8.jpg" width="378" height="260" alt=""/></a><span>天气主题</span></li>
+                <li><a href="javascript:;"><img src="img/work1-9.jpg" data-url="img/work1-9.jpg" width="378" height="260" alt=""/></a><span>乐视TV</span></li>
+            </ul>
+             <div class="w_list clearfix app">
+                <h2>小厨房APP</h2>
+                <span class="prev"></span>
+                <ul class="app_box clearfix">
+                    <li>
+                        <a href="./app/xcf/index.html" target="_blank"><img src="img/app1-1.jpg" width="302" height="536" alt=""/></a>
+                    </li>
+                    <li class="center"> <a href="./app/xcf/index.html" target="_blank"><img src="img/app1-2.jpg" width="302" height="536" alt=""/></a></li>
+                    <li> <a href="./app/xcf/index.html" target="_blank"><img src="img/app1-3.jpg" width="302" height="536" alt=""/></a></li>
+                </ul>
+                <span class="next"></span>
+                <p class="frist">启动页</p><p class="center">首页</p><p>菜谱详情</p>
+                 <div class="focus clearfix">
+                    <ol class="clearfix">
+                        <li class="select"></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ol>
+                </div>
+            </div>
+            <div class="w_list php">
+            <img src="img/php.jpg" width="906" height="1249" alt=""/></div>
+           
+        </div>
+    </div>
+<div class="skill clearfix"> 
+        <ul class="s_nav clearfix" id="s_nav">
+                <li class="select">饼状图</li>
+                <li>标签云</li>
+            </ul>
+        <div class="skill_con clearfix w1200">
+            
+            <div id="echart" class="s_list show"></div>
+            <div class="s_list tag_yun clearfix">
+                <div id="tagsList" class="clearfix">
+                <a href="javascript:;">Axure</a>
+                <a href="javascript:;">LNMP</a>
+                <a href="javascript:;">C10K</a>
+                <a href="javascript:;">JQuery</a>
+                <a href="javascript:;">Phalcon</a>
+                <a href="javascript:;">Mogondb</a>
+                <a href="javascript:;">Linux</a>
+                <a href="javascript:;">HTTPSQS</a>
+                <a href="javascript:;">DIV+CSS</a>
+                <a href="javascript:;">ThinkPHP</a>
+                <a href="javascript:;">Swoole</a>
+                <a href="javascript:;">YAF</a>
+                <a href="javascript:;">MYSQL</a>
+                <a href="javascript:;">Bootstrap</a>
+                <a href="javascript:;">FW</a>
+                <a href="javascript:;">DW</a>
+                <a href="javascript:;">HTML5</a>
+                <a href="javascript:;">FL</a>
+                <a href="javascript:;">AI</a>
+                <a href="javascript:;">PS</a>
+                <a href="javascript:;">OOP</a>
+                <a href="javascript:;">Ajax</a>
+                <a href="javascript:;">JavaScript</a>
+                <a href="javascript:;">Redis</a>
+                <a href="javascript:;">Memcache</a>
+                <a href="javascript:;">Shell</a>
+                <a href="javascript:;">Hash</a>
+                <a href="javascript:;">gdb</a>
+                <a href="javascript:;">Strace</a>
+                <a href="javascript:;">Htop</a>
+                <a href="javascript:;">PHP</a>
+                </div>
+            </div>
+        </div>
+</div>
+<div class="footer">
+    <div class="bg"><h3>About</h3>
+        <ul class="con clearfix">
+            <li class="contact">
+                 <p><span></span>18520128569</p>
+                 <p><span class="email"></span><a href="mailto:netstan@163.com">netstan#163.com</a></p>
+                 <p><span class="qq"></span><a target="_blank" href="http://wpa.qq.com/msgrd?v=3&amp;uin=410440255&amp;site=qq&amp;menu=yes">410440255</a></p>
+            </li>
+            <li class="pic"></li>
+            <li class="experience">
+                <p>周超  |  男  |  26岁  |  5年工作经验</p>
+                <p>大专 · 广州信息工程职业学院</p>
+                <p>PHP开发工程师  |  Web前端工程师</p>
+            </li>
+        </ul>
+    </div>
+<div class="about w1200">
+    <div class="work"></div>   
+    <p><a href="javascript:alert('请联系我');"  target="_blank">详细个性简历</a></p>     
+</div>   
+</div>
+<div class="copy_right">
+    <div class="w1200 description">
+        <ul class="clearfix">
+            <li><img src="img/books.jpg" width="814" height="143" alt=""/></li>
+            <li><img src="img/psb-(1).jpg" width="215" height="143" alt=""/></li>
+            <li><img src="img/psb-(2).jpg" width="215" height="143" alt=""/></li>
+            <li><img src="img/psb-(3).jpg" width="215" height="143" alt=""/></li>
+            <li><img src="img/psb-(4).jpg" width="215" height="143" alt=""/></li>
+            <li><img src="img/psb-(5).jpg" width="215" height="143" alt=""/></li>
+            <li><img src="img/psb-(6).jpg" width="215" height="143" alt=""/></li>
+            <li><img src="img/psb-(7).jpg" width="215" height="143" alt=""/></li>
+            <li><img src="img/psb-(8).jpg" width="215" height="143" alt=""/></li>
+            <li><img src="img/psb.jpg" width="215" height="143" alt=""/></li>
+            
+        </ul>
+    </div>
+<div class="w1200">
+        <a href="app/tgq/index.html" target="_blank">看累了弹会钢琴吧</a>
+        <p>&copy;2014-2015 zcao.net All rights reserved.</p>
+    </div>
+</div>
+<div class="alert">
+    <span></span>
+    <p>
+        <h2></h2>
+    </p>
+</div>
+</body>
+</html>
+<script type="text/javascript" src="./js/echarts/build/dist/echarts.js"></script>
+<script type="text/javascript" src="js/echarts_init.js"> </script>
+<script type="text/javascript" src="js/tag.js"></script>
+<script type="text/javascript" src="./js/scrollLoading.js"></script>
+<script type="text/javascript" src="js/index.js"></script>

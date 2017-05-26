@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>钢琴</title>
+	<style type="text/css">
+	*{padding: 0;margin: 0;border: 0;list-style: none;}
+		.box{width:510px; height: 400px; margin:100px auto;position: relative;}
+		ul li{width:70px; height: 400px;border: 1px solid #ccc;border-bottom-right-radius: 10px;border-bottom-left-radius: 10px;float:left;}
+		.box div{width:50px;height:270px;background: #000;border-bottom-right-radius: 8px;border-bottom-left-radius: 8px;position: absolute;}
+		.div1{left:48px;}
+		.div2{left:120px;}
+		.div3{left:261px;}
+		.div4{left:333px;}
+		.div5{left:405px;}
+		h2{text-align:center;}
+	</style>
+</head>
+<body>
+	<div class="box">
+		<ul>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ul>
+		<div class="div1"></div>
+		<div class="div2"></div>
+		<div class="div3"></div>
+		<div class="div4"></div>
+		<div class="div5"></div>
+	</div>
+	<audio src=""></audio>
+	<h2>数字键1-7</h2>
+</body>
+</html>
+<script type="text/javascript">
+	var data = {
+		49:1,
+		50:2,
+		51:3,
+		52:4,
+		53:5,
+		54:6,
+		55:7
+	}
+	window.onkeydown = function(e){
+		var audio = document.getElementsByTagName('audio')[0];
+		var lis = document.getElementsByTagName('li');
+		for(var i=0;i<lis.length;i++){
+			lis[i].style.background="";
+		}
+		if(data[e.keyCode]){
+			audio.src="audio/"+data[e.keyCode]+".mp3";
+			audio.play();
+			lis[data[e.keyCode]-1].style.background="#bbb";
+		}
+		window.onkeyup = function(e){
+			var lis = document.getElementsByTagName('li');
+			for(var i=0;i<lis.length;i++){
+				lis[i].style.background="";
+			}
+		}
+	}
+</script>
